@@ -18,6 +18,7 @@
 import * as React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
+import Register from './pages/Register';
 import Main from './pages/Main';
 import NoPage from './pages/NoPage';
 
@@ -33,6 +34,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Main />} />
+        <Route path="register" element={<Register />} />
         <Route path="Categories" element={<Categories />} />
         <Route path="AddRecipes" element={<AddRecipes />} />
         <Route path="MyRecipes" element={<MyRecipes />} />
