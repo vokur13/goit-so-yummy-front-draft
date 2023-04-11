@@ -1,19 +1,12 @@
-// import { Container } from './AppBar.styled';
+import { Container } from './AppBar.styled';
 
-// export default function AppBar({ mode }) {
-//   return (
-//     <Container mode={mode}>
-//       <h1>AppBar</h1>
-//     </Container>
-//   );
-// }
-
-import { Box } from '../../Box';
-
-export const AppBar = () => {
+export default function AppBar({ mode }) {
   return (
-    <Box>
-      <h1>AppBar</h1>
-    </Box>
+    <>
+      <Container mode={mode}>
+        <h1>AppBar</h1>
+        <div>Menu</div>
+      </Container>
+    </>
   );
-};
+}
