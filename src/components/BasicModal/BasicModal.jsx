@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-// import Button from '@mui/material/Button';
+import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
@@ -29,7 +29,6 @@ export default function BasicModal() {
 
   return (
     <div>
-      {/* <Button onClick={handleOpen}>Open modal</Button> */}
       <Modal
         open={open}
         onClose={handleClose}
@@ -43,6 +42,13 @@ export default function BasicModal() {
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
           </Typography>
+          <Button
+            onClick={() => {
+              console.log('Edit Profile');
+            }}
+          >
+            Edit Profile
+          </Button>
         </Box>
       </Modal>
     </div>
