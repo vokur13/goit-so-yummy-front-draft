@@ -12,10 +12,7 @@ function Recipe() {
           red onions. Then drizzled with a homemade lemon vinaigrette.
         </Paragraph>
       </ImgBox>
-      <Box
-        component="section"
-        sx={{ px: '100px', py: '50px', border: '1px solid blue' }}
-      >
+      <Box component="section" sx={{ py: '50px', border: '1px solid blue' }}>
         <Box
           component="div"
           sx={{

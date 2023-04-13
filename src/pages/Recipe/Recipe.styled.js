@@ -7,14 +7,8 @@ import recipeDesk from '../../img/recipePage/recipe_desk.jpg';
 import recipeDesk2 from '../../img/recipePage/recipe_desk@2x.jpg';
 
 export const Container = styled.div`
-  /* display: flex; */
   width: 100%;
   height: 100vh;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* margin-left: -100px; */
-  /* margin-right: -100px; */
-  /* background-color: lightgreen; */
   padding-top: 493px;
 `;
 
