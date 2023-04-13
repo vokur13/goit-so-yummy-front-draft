@@ -11,6 +11,7 @@ export const Container = styled.div`
   padding-right: 100px;
   border: 1px solid red;
   z-index: 99;
+
   /* background-color: ${({ mode, theme }) => {
     switch ('dark') {
       case 'light':
