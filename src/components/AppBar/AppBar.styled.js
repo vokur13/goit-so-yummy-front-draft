@@ -2,13 +2,16 @@ import styled from '@emotion/styled';
 
 export const Container = styled.div`
   display: flex;
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: ${({ mode, theme }) => {
+  border: 1px solid red;
+  /* z-index: 99; */
+  /* background-color: ${({ mode, theme }) => {
     switch ('dark') {
       case 'light':
         return theme.colors.light;
@@ -17,6 +20,10 @@ export const Container = styled.div`
       default:
         return theme.colors.default;
     }
-  }};
-  color: ${(props) => props.theme.colors.white};
+  }}; */
+  /* background-color: purple; */
+`;
+
+export const Title = styled.h1`
+  color: black;
 `;

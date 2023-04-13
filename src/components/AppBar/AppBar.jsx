@@ -1,12 +1,16 @@
-import { Container } from './AppBar.styled';
+import { Container, Title } from './AppBar.styled';
+import Rectangles from '../Rectangles';
 
-export default function AppBar({ mode }) {
+function AppBar({ mode }) {
   return (
     <>
       <Container mode={mode}>
-        <h1>AppBar</h1>
+        <Title>AppBar</Title>
         <div>Menu</div>
+        {/* <Rectangles /> */}
       </Container>
     </>
   );
 }
+
+export default AppBar;
