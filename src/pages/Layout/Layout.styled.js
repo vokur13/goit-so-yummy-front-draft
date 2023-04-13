@@ -6,8 +6,8 @@ export const Container = styled.div`
   /* position: fixed; */
   /* width: 100%; */
   /* align-items: center; */
-  /* padding-left: 100px; */
-  /* padding-right: 100px; */
+  padding-left: 100px;
+  padding-right: 100px;
   /* background-color: purple; */
 `;
 

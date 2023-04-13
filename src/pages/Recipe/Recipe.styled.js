@@ -33,6 +33,9 @@ export const ImgBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
 `;
 
 export const Title = styled.h1`
