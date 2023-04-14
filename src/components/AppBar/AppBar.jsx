@@ -1,6 +1,7 @@
 import { Container, Title } from './AppBar.styled';
 import Rectangles from '../Rectangles';
-import User from '../UserLogo';
+import UserLogo from '../UserLogo';
+import BasicSwitch from '../BasicSwitch';
 
 function AppBar({ mode }) {
   return (
@@ -8,7 +9,8 @@ function AppBar({ mode }) {
       <Container mode={mode}>
         <Title>AppBar</Title>
         <div>Menu</div>
-        <User />
+        <UserLogo />
+        <BasicSwitch />
         {/* <Rectangles /> */}
       </Container>
     </>

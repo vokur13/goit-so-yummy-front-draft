@@ -1,13 +1,16 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { toggle } from '../../features/modal/modalSlice';
+import { toggleUserLogo } from '../../features/modal/modalSlice';
 
 import Box from '@mui/material/Box';
-import BasicSwitch from '../BasicSwitch';
 import ImageAvatar from '../ImageAvatar';
-import BasicModal from '../BasicModal';
+import UserLogoModal from '../UserLogoModal';
+import UserInfoModal from '../UserInfoModal';
+import LogoutModal from '../LogoutModal';
 
-function User() {
-  const isOpen = useSelector((state) => state.modal.isOpen);
+function UserLogo() {
+  const isUserLogoOpen = useSelector((state) => state.modal.isUserLogoOpen);
+  const isUserInfoOpen = useSelector((state) => state.modal.isUserInfoOpen);
+  const isLogoutOpen = useSelector((state) => state.modal.isLogoutOpen);
   const dispatch = useDispatch();
 
   return (
@@ -22,29 +25,22 @@ function User() {
         gap: '14px',
         width: '101px',
         height: '46px',
+        cursor: 'pointer',
       }}
     >
       <Box
-        sx={{
-          cursor: 'pointer',
-        }}
         onClick={() => {
-          dispatch(toggle());
+          dispatch(toggleUserLogo());
         }}
       >
         <ImageAvatar />
       </Box>
       <p>User</p>
-      <Box
-        sx={{
-          marginLeft: '50px',
-        }}
-      >
-        <BasicSwitch />
-      </Box>
-      {isOpen && <BasicModal />}
+      {isUserLogoOpen && <UserLogoModal />}
+      {isUserInfoOpen && <UserInfoModal />}
+      {isLogoutOpen && <LogoutModal />}
     </Box>
   );
 }
 
-export default User;
+export default UserLogo;
