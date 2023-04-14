@@ -45,6 +45,7 @@ export default function BasicModal() {
           <Button
             onClick={() => {
               console.log('Edit Profile');
+              handleClose();
             }}
           >
             Edit Profile

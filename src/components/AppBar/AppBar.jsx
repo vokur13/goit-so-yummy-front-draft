@@ -1,6 +1,6 @@
 import { Container, Title } from './AppBar.styled';
 import Rectangles from '../Rectangles';
-import User from '../User';
+import User from '../UserLogo';
 
 function AppBar({ mode }) {
   return (
